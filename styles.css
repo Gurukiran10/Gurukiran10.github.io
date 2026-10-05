@@ -404,14 +404,14 @@ h2 em { color: var(--muted); letter-spacing: -0.01em; }
 .intro-name { margin: 0 0 6px; font-weight: 600; font-size: 16px; letter-spacing: -0.01em; }
 .avatar { position: relative; width: 64px; height: 64px; flex: none; }
 .avatar img {
-  width: 100%; height: 100%; border-radius: 50%; object-fit: cover; object-position: 50% 20%; display: block;
+  width: 100%; height: 100%; border-radius: 50%; object-fit: cover; display: block;
   box-shadow: 0 0 0 2px var(--bg), 0 0 0 4px var(--accent);
   transition: transform 0.4s var(--ease);
 }
 .avatar:hover img { transform: scale(1.06) rotate(-3deg); }
 .avatar-dot { position: absolute; right: 1px; bottom: 1px; width: 14px; height: 14px; border-radius: 50%; background: #28c840; border: 3px solid var(--bg); }
 .contact-photo {
-  display: block; width: 96px; height: 96px; border-radius: 50%; object-fit: cover; object-position: 50% 20%;
+  display: block; width: 96px; height: 96px; border-radius: 50%; object-fit: cover;
   margin: 0 auto 26px; box-shadow: 0 0 0 3px var(--bg), 0 0 0 5px var(--accent), 0 20px 50px -10px var(--accent-soft);
 }
 @media (max-width: 640px) {
