@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gurukiran S — AI Engineer</title>
+  <meta name="description" content="Gurukiran S builds AI agents that do real work and prove it. Python, FastAPI, LangGraph, RAG." />
+  <meta property="og:title" content="Gurukiran S — AI Engineer" />
+  <meta property="og:description" content="I build AI agents that do the work and prove it." />
+  <meta name="theme-color" content="#09090b" />
+  <meta property="og:image" content="https://gurukiran10.github.io/assets/gurukiran.jpg" />
+  <meta property="og:url" content="https://gurukiran10.github.io/" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary" />
+  <link rel="canonical" href="https://gurukiran10.github.io/" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Gurukiran S","jobTitle":"AI Engineer","url":"https://gurukiran10.github.io/","image":"https://gurukiran10.github.io/assets/gurukiran.jpg","sameAs":["https://github.com/Gurukiran10","https://www.linkedin.com/in/gurukiran-s-1aaa30265"],"alumniOf":"Ballari Institute of Technology & Management"}</script>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%2309090b'/><text x='50%' y='58%' font-family='monospace' font-size='15' font-weight='700' fill='%23c8f560' text-anchor='middle' dominant-baseline='middle'>gk</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script>
+    document.documentElement.classList.add("js");
+    try { var t = localStorage.getItem("theme"); if (t) document.documentElement.dataset.theme = t; else if (matchMedia("(prefers-color-scheme: light)").matches) document.documentElement.dataset.theme = "light"; } catch (e) {}
+  </script>
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="glow" aria-hidden="true"></div>
+
+  <!-- NAV -->
+  <header class="nav">
+    <a href="#top" class="logo" aria-label="Home"><span class="logo-mark">gk</span><span class="logo-slash">/</span></a>
+    <nav class="nav-links">
+      <a href="#work">Work</a>
+      <a href="#principles">Approach</a>
+      <a href="#experience">Experience</a>
+      <a href="#archive">Archive</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="kbd-btn" id="openPalette" aria-label="Open command menu"><span>Search</span><kbd id="kbdHint">Ctrl K</kbd></button>
+      <button class="icon-btn" id="themeToggle" aria-label="Toggle theme">
+        <svg class="i-sun" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        <svg class="i-moon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-left">
+        <div class="intro reveal">
+          <div class="avatar"><img src="assets/gurukiran.jpg" alt="Gurukiran S" width="64" height="64" /><span class="avatar-dot" aria-hidden="true"></span></div>
+          <div>
+            <p class="intro-name">Gurukiran S</p>
+            <p class="status"><span class="pulse"></span>Open to AI / Backend Engineer roles</p>
+          </div>
+        </div>
+        <h1 class="hero-title reveal">
+          I build AI agents<br />that <em>do the work</em><br />and <span class="hl">prove it.</span>
+        </h1>
+        <p class="hero-sub reveal">
+          I'm <strong>Gurukiran S</strong>, an AI engineer from India. I build agentic systems with Python, FastAPI and LangGraph, and I treat
+          <em class="serif">"it said it's done"</em> as something to check, not something to believe.
+          Recently finished as an AI Platform Developer Intern at <strong>SeedlingLabs</strong>.
+        </p>
+        <div class="hero-cta reveal">
+          <a class="btn btn-primary" href="#work">See the work <span aria-hidden="true">↓</span></a>
+          <a class="btn btn-ghost" href="https://github.com/Gurukiran10" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a>
+          <button class="btn btn-ghost" data-copy="sgurukiran1@gmail.com">Copy email</button>
+        </div>
+      </div>
+
+      <!-- Live agent trace -->
+      <div class="hero-right reveal">
+        <div class="term" id="term">
+          <div class="term-bar">
+            <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
+            <span class="term-title">worker.run — invoice-over-limit</span>
+            <span class="term-live"><span class="pulse sm"></span>replay</span>
+          </div>
+          <div class="term-body" id="termBody" aria-live="off"></div>
+          <div class="term-foot">
+            <span>steps <b id="tSteps">0</b></span>
+            <span>cost <b id="tCost">$0.00</b></span>
+            <span>verifier <b id="tVer">waiting</b></span>
+          </div>
+        </div>
+        <p class="term-caption">An illustrative replay of the invoice scenario from <a href="#work">Acme Workforce</a>: plan, act, ask a human, recover, then let a separate model verify.</p>
+      </div>
+    </section>
+
+    <!-- PROOF STRIP -->
+    <section class="proof reveal" aria-label="Key numbers">
+      <div class="proof-item"><span class="num" data-count="0">0</span><span class="lbl">false "done"s in 27 live agent runs</span></div>
+      <div class="proof-item"><span class="num" data-count="81">81</span><span class="lbl">unit tests on one agent runtime, 29 of them on the safety gate</span></div>
+      <div class="proof-item"><span class="num"><span data-count="5">5</span>/5</span><span class="lbl">correct safety stops: fraud, denied approval, out-of-role</span></div>
+      <div class="proof-item"><span class="num"><span data-count="15" data-suffix="+">15+</span></span><span class="lbl">built projects: agents, APIs, RAG systems, a Go service</span></div>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Python</span><i>✦</i><span>FastAPI</span><i>✦</i><span>LangGraph</span><i>✦</i><span>RAG</span><i>✦</i><span>Qdrant</span><i>✦</i><span>pgvector</span><i>✦</i><span>Playwright</span><i>✦</i><span>TypeScript</span><i>✦</i><span>Next.js</span><i>✦</i><span>Go</span><i>✦</i><span>MCP</span><i>✦</i><span>Gemini · Groq · Claude</span><i>✦</i>
+        <span>Python</span><i>✦</i><span>FastAPI</span><i>✦</i><span>LangGraph</span><i>✦</i><span>RAG</span><i>✦</i><span>Qdrant</span><i>✦</i><span>pgvector</span><i>✦</i><span>Playwright</span><i>✦</i><span>TypeScript</span><i>✦</i><span>Next.js</span><i>✦</i><span>Go</span><i>✦</i><span>MCP</span><i>✦</i><span>Gemini · Groq · Claude</span><i>✦</i>
+      </div>
+    </div>
+
+    <!-- WORK -->
+    <section id="work" class="section">
+      <div class="section-head reveal">
+        <span class="eyebrow">01 — Selected work</span>
+        <h2>Things I've built<br /><em>and measured.</em></h2>
+      </div>
+
+      <!-- Flagship -->
+      <article class="flagship spot reveal">
+        <div class="flag-top">
+          <span class="tag tag-accent">Flagship</span>
+          <span class="tag">CentrAlign · Autonomous AI Task Worker</span>
+        </div>
+        <div class="flag-grid">
+          <div>
+            <h3 class="flag-title">Acme Workforce</h3>
+            <p class="flag-lede">AI employees you hire with a role file. They work in real company web apps through a real browser, stop and ask when a decision is yours, and only say "done" after an <strong>independent verifier on a different model</strong> re-checks the live systems.</p>
+            <ul class="bullets">
+              <li>Plans from company SOPs and acts in mail, ERP, a job portal and an ATS</li>
+              <li>Recovers from server errors, "ghost saves" and fake <code>Saved!</code> toasts without creating duplicate records</li>
+              <li>Learns: when you answer a question once, it proposes a rule for company memory. After you approve it, it stops asking.</li>
+            </ul>
+            <div class="stack"><span>Python</span><span>Playwright</span><span>Multi-model LLMs</span><span>Evals</span><span>CI</span></div>
+            <div class="links">
+              <a href="https://github.com/Gurukiran10/ai-workforce" target="_blank" rel="noopener">Code ↗</a>
+              <a href="https://youtu.be/hfl3IZnOA8M" target="_blank" rel="noopener">Demo video ↗</a>
+              <a href="https://gurukiran10.github.io/ai-workforce/" target="_blank" rel="noopener">Showcase ↗</a>
+              <a href="https://gurukiran10.github.io/ai-workforce/runs/sample-invoice-over-limit-approval/report.html" target="_blank" rel="noopener">Evidence report ↗</a>
+            </div>
+          </div>
+          <div class="metrics">
+            <div class="metric"><span class="m-val">16/17</span><span class="m-lbl">dev scenarios passed</span></div>
+            <div class="metric"><span class="m-val">7/10</span><span class="m-lbl">held-out runs passed (5 tasks frozen before any run, each run twice)</span></div>
+            <div class="metric"><span class="m-val accent">0</span><span class="m-lbl">false successes in 27 live runs</span></div>
+            <div class="metric"><span class="m-val">$5.21</span><span class="m-lbl">total eval spend</span></div>
+            <div class="metric wide">
+              <span class="m-lbl">Learning loop: the same invoice, before and after one approved rule</span>
+              <div class="ba">
+                <div><b>1 → 0</b><small>questions</small></div>
+                <div><b>27 → 20</b><small>steps</small></div>
+                <div><b>$0.18 → $0.10</b><small>cost</small></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project grid -->
+      <div class="grid">
+        <article class="card spot reveal">
+          <div class="card-head"><span class="idx">02</span><span class="tag">Techvruk · Challenge</span></div>
+          <h3>Autonomous Research Agent</h3>
+          <p>A LangGraph agent that plans sub-questions, uses tools in a ReAct loop, critiques its own findings, and writes a cited report. It can only cite URLs a tool actually returned, and it remembers lessons from your feedback for later runs.</p>
+          <div class="flow"><span>plan</span>→<span>act</span>→<span>observe</span>→<span>reflect</span>→<span>write</span></div>
+          <div class="stack"><span>LangGraph</span><span>FastAPI</span><span>Streamlit</span><span>SQLite memory</span></div>
+          <a class="card-link" href="https://github.com/Gurukiran10/research-agent" target="_blank" rel="noopener">View code ↗</a>
+        </article>
+
+        <article class="card spot reveal">
+          <div class="card-head"><span class="idx">03</span><span class="tag">Hackathon</span></div>
+          <h3>Atlas — Financial Analyst on Telegram</h3>
+          <p>A financial assistant with no slash commands and no menus. You just talk to it: ask about a ticker, have it watch AMD for you, or drop in a chart screenshot or an earnings PDF and ask what it means.</p>
+          <div class="stack"><span>FastAPI</span><span>Telegram Bot</span><span>Postgres + pgvector</span><span>Gemini</span></div>
+          <a class="card-link" href="https://github.com/Gurukiran10/atlas-financial-assistant" target="_blank" rel="noopener">View code ↗</a>
+        </article>
+
+        <article class="card spot reveal">
+          <div class="card-head"><span class="idx">04</span><span class="tag">AIVOA.AI · Live</span></div>
+          <h3>Pharma Complaint Copilot</h3>
+          <p>A single chat box handles complaints for pharma manufacturing: log one, correct it in plain English, or ask questions about it. A LangGraph router decides what to do, and the AI is the only thing that fills the form, with a live risk assessment beside it.</p>
+          <div class="stack"><span>LangGraph</span><span>Groq · Llama 3.3</span><span>React</span></div>
+          <div class="card-links">
+            <a class="card-link" href="https://aivoa-complaint-system-xi.vercel.app" target="_blank" rel="noopener">Live demo ↗</a>
+            <a class="card-link" href="https://github.com/Gurukiran10/complaint-management-system" target="_blank" rel="noopener">Code ↗</a>
+          </div>
+        </article>
+
+        <article class="card spot reveal">
+          <div class="card-head"><span class="idx">05</span><span class="tag">Convin · Take-home</span></div>
+          <h3>webhook-ingest — debugging a Go service</h3>
+          <p>A take-home that simulates a production incident: a Go webhook service with duplicate call records, account counts drifting up, recordings silently left unprocessed, and in-flight work lost on every deploy. My job was to find the root causes and fix them.</p>
+          <div class="stack"><span>Go</span><span>Concurrency</span><span>Idempotency</span></div>
+          <a class="card-link" href="https://github.com/Gurukiran10/convin-backend" target="_blank" rel="noopener">View code ↗</a>
+        </article>
+
+        <article class="card spot reveal">
+          <div class="card-head"><span class="idx">06</span><span class="tag">Zypit · Take-home</span></div>
+          <h3>Script Bench</h3>
+          <p>Turns an idea into a short-video script (hook, body, CTA) that fits the exact length a creator wants to film. The LLM writes the sentences; code does the counting, rejects stock phrases, and picks the best hook.</p>
+          <div class="stack"><span>Python</span><span>LLM + deterministic checks</span></div>
+          <a class="card-link" href="https://github.com/Gurukiran10/script-bench" target="_blank" rel="noopener">View code ↗</a>
+        </article>
+
+        <article class="card spot reveal">
+          <div class="card-head"><span class="idx">07</span><span class="tag">SoftwareBrio · Take-home</span></div>
+          <h3>Lead Enrichment Agent</h3>
+          <p>Give it a list of company domains. It crawls each company's public site with a headless browser and returns structured intelligence: overview, ideal customer profile, contact routes, leadership, and a confidence score.</p>
+          <div class="stack"><span>Playwright</span><span>LLM extraction</span><span>Python</span></div>
+          <a class="card-link" href="https://github.com/Gurukiran10/lead-enrichment-agent" target="_blank" rel="noopener">View code ↗</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- PRINCIPLES -->
+    <section id="principles" class="section">
+      <div class="section-head reveal">
+        <span class="eyebrow">02 — How I build</span>
+        <h2>Four rules I<br /><em>actually follow.</em></h2>
+      </div>
+      <div class="principles">
+        <div class="pr reveal"><span class="pr-n">i.</span><h3>Verify, don't trust.</h3><p>An agent saying "done" is a claim. I re-check the real system state with a separate verifier, preferably on a different model.</p></div>
+        <div class="pr reveal"><span class="pr-n">ii.</span><h3>The LLM writes, code decides.</h3><p>Models are good with language and bad at counting, limits and rules. Anything deterministic goes in code, where it can be tested.</p></div>
+        <div class="pr reveal"><span class="pr-n">iii.</span><h3>Write the evals first.</h3><p>Held-out tasks are written before the first run. If I can't measure it, I don't put it in the README.</p></div>
+        <div class="pr reveal"><span class="pr-n">iv.</span><h3>Humans own the decisions.</h3><p>Money, people and anything irreversible get a human checkpoint. Good agents ask once, then remember the answer.</p></div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section">
+      <div class="section-head reveal">
+        <span class="eyebrow">03 — Experience</span>
+        <h2>Where I've<br /><em>shipped.</em></h2>
+      </div>
+      <ol class="timeline">
+        <li class="tl reveal">
+          <div class="tl-when">Mar 2026 — Completed</div>
+          <div class="tl-body">
+            <h3>AI Platform Developer Intern <span>· SeedlingLabs Pvt Ltd</span></h3>
+            <ul class="bullets">
+              <li>Built backend services in Python and FastAPI that power AI platform features</li>
+              <li>Designed REST APIs for scalable AI workflows; built LLM pipelines and RAG systems</li>
+              <li>Built agent orchestration and platform automation, and debugged production issues to make the backend more reliable</li>
+            </ul>
+            <div class="stack"><span>Python</span><span>FastAPI</span><span>RAG</span><span>Agents</span></div>
+          </div>
+        </li>
+        <li class="tl reveal">
+          <div class="tl-when">2022 — 2026</div>
+          <div class="tl-body">
+            <h3>B.E. Artificial Intelligence &amp; Machine Learning <span>· BITM, Ballari</span></h3>
+            <p class="muted">CGPA 8.22. IIT Madras Hackathon participant, BITM TechFest 2025.</p>
+          </div>
+        </li>
+        <li class="tl reveal">
+          <div class="tl-when">Certifications</div>
+          <div class="tl-body">
+            <div class="certs">
+              <span>Microsoft Azure AZ-900</span><span>Google Cloud Generative AI</span><span>IBM Enterprise AI</span><span>TCS iON Career Edge</span><span>Wipro TalentNext Data Science</span>
+            </div>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ARCHIVE -->
+    <section id="archive" class="section">
+      <div class="section-head reveal">
+        <span class="eyebrow">04 — Archive</span>
+        <h2>More from<br /><em>the workbench.</em></h2>
+      </div>
+      <div class="table-wrap reveal">
+        <table class="archive">
+          <thead><tr><th>Project</th><th class="hide-sm">Context</th><th class="hide-sm">Built with</th><th>Link</th></tr></thead>
+          <tbody>
+            <tr><td>Scalable AI Chatbot Platform</td><td class="hide-sm">Personal</td><td class="hide-sm">LangGraph · Qdrant · Mem0 · MCP</td><td><a href="https://github.com/Gurukiran10/SyncMinds" target="_blank" rel="noopener">↗</a></td></tr>
+            <tr><td>Meeting Intelligence</td><td class="hide-sm">Personal</td><td class="hide-sm">FastAPI · STT · Vector DB · RAG</td><td><a href="https://meeting-intelligence-five.vercel.app" target="_blank" rel="noopener">↗</a></td></tr>
+            <tr><td>GitHub Issue Assistant</td><td class="hide-sm">SeedlingLabs assessment</td><td class="hide-sm">FastAPI · Streamlit · GitHub API</td><td><a href="https://github.com/Gurukiran10/github-issue-assistant" target="_blank" rel="noopener">↗</a></td></tr>
+            <tr><td>AI Support-Ticket Decision API</td><td class="hide-sm">MaxsorLabs</td><td class="hide-sm">FastAPI · JWT · local RAG · Gemini/Groq</td><td><a href="https://github.com/Gurukiran10/maxsorlabs-ai-decision-api" target="_blank" rel="noopener">↗</a></td></tr>
+            <tr><td>Automated Outreach Pipeline</td><td class="hide-sm">Personal</td><td class="hide-sm">Python · LLM</td><td><a href="https://github.com/Gurukiran10/automated-outreach-pipeline-" target="_blank" rel="noopener">↗</a></td></tr>
+            <tr><td>Accredian Clone</td><td class="hide-sm">Frontend</td><td class="hide-sm">React · Tailwind</td><td><a href="https://accredian-clone-fawn.vercel.app" target="_blank" rel="noopener">↗</a></td></tr>
+            <tr><td>Patient Queue &amp; Appointments</td><td class="hide-sm">Academic</td><td class="hide-sm">HTML · JS</td><td><a href="https://github.com/Gurukiran10/patient-queue-system" target="_blank" rel="noopener">↗</a></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact reveal">
+      <img class="contact-photo" src="assets/gurukiran.jpg" alt="" width="96" height="96" loading="lazy" />
+      <span class="eyebrow">05 — Contact</span>
+      <h2 class="contact-title">Let's build something<br /><em>that actually works.</em></h2>
+      <p class="muted">I'm looking for AI engineering, agent and backend roles. The fastest way to reach me is email.</p>
+      <button class="mail" data-copy="sgurukiran1@gmail.com">
+        <span>sgurukiran1@gmail.com</span>
+        <span class="mail-hint">click to copy</span>
+      </button>
+      <div class="socials">
+        <a href="https://github.com/Gurukiran10" target="_blank" rel="noopener">GitHub ↗</a>
+        <a href="https://www.linkedin.com/in/gurukiran-s-1aaa30265" target="_blank" rel="noopener">LinkedIn ↗</a>
+        <a href="mailto:sgurukiran1@gmail.com">Email ↗</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>© <span id="year"></span> Gurukiran S</span>
+    <span class="muted">Hand-built in plain HTML, CSS &amp; JS. No templates.</span>
+    <span class="muted" id="clock"></span>
+  </footer>
+
+  <!-- COMMAND PALETTE -->
+  <div class="palette" id="palette" role="dialog" aria-modal="true" aria-label="Command menu" hidden>
+    <div class="palette-box">
+      <input id="paletteInput" type="text" placeholder="Type a command or search…" autocomplete="off" />
+      <ul id="paletteList"></ul>
+      <div class="palette-foot"><span><kbd>↑↓</kbd> navigate</span><span><kbd>↵</kbd> select</span><span><kbd>esc</kbd> close</span></div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
